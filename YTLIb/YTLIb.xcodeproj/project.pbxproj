@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6573D0BD1956CD7000D536C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D0BC1956CD7000D536C4 /* Foundation.framework */; };
+		6573D0C21956CD7000D536C4 /* YouTubeView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6573D0C11956CD7000D536C4 /* YouTubeView.h */; };
+		6573D0C41956CD7000D536C4 /* YouTubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6573D0C31956CD7000D536C4 /* YouTubeView.m */; };
+		6573D0CC1956CD7000D536C4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D0CB1956CD7000D536C4 /* SenTestingKit.framework */; };
+		6573D0CE1956CD7000D536C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D0CD1956CD7000D536C4 /* UIKit.framework */; };
+		6573D0CF1956CD7000D536C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D0BC1956CD7000D536C4 /* Foundation.framework */; };
+		6573D0D21956CD7000D536C4 /* libYTLIb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D0B91956CD7000D536C4 /* libYTLIb.a */; };
+		6573D0D81956CD7000D536C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6573D0D61956CD7000D536C4 /* InfoPlist.strings */; };
+		6573D0DB1956CD7000D536C4 /* YTLIbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6573D0DA1956CD7000D536C4 /* YTLIbTests.m */; };
+		65874CDC195B4B8A00000C1B /* XMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 65874CDB195B4B8A00000C1B /* XMLParse.m */; };
+		65D8F1891959CDF6005D8147 /* YTRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8F1881959CDF6005D8147 /* YTRequests.m */; };
+		65D8F18C1959CE59005D8147 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8F18B1959CE59005D8147 /* Utils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6573D0D01956CD7000D536C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6573D0B11956CD7000D536C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6573D0B81956CD7000D536C4;
+			remoteInfo = YTLIb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6573D0B71956CD7000D536C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				6573D0C21956CD7000D536C4 /* YouTubeView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6573D0B91956CD7000D536C4 /* libYTLIb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYTLIb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6573D0BC1956CD7000D536C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6573D0C01956CD7000D536C4 /* YTLIb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTLIb-Prefix.pch"; sourceTree = "<group>"; };
+		6573D0C11956CD7000D536C4 /* YouTubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeView.h; sourceTree = "<group>"; };
+		6573D0C31956CD7000D536C4 /* YouTubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTubeView.m; sourceTree = "<group>"; };
+		6573D0CA1956CD7000D536C4 /* YTLIbTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTLIbTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6573D0CB1956CD7000D536C4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6573D0CD1956CD7000D536C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6573D0D51956CD7000D536C4 /* YTLIbTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YTLIbTests-Info.plist"; sourceTree = "<group>"; };
+		6573D0D71956CD7000D536C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6573D0D91956CD7000D536C4 /* YTLIbTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTLIbTests.h; sourceTree = "<group>"; };
+		6573D0DA1956CD7000D536C4 /* YTLIbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTLIbTests.m; sourceTree = "<group>"; };
+		65874CDA195B4B8A00000C1B /* XMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParse.h; sourceTree = "<group>"; };
+		65874CDB195B4B8A00000C1B /* XMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParse.m; sourceTree = "<group>"; };
+		65D8F1871959CDF6005D8147 /* YTRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTRequests.h; sourceTree = "<group>"; };
+		65D8F1881959CDF6005D8147 /* YTRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTRequests.m; sourceTree = "<group>"; };
+		65D8F18A1959CE59005D8147 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		65D8F18B1959CE59005D8147 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6573D0B61956CD7000D536C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0BD1956CD7000D536C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6573D0C61956CD7000D536C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0CC1956CD7000D536C4 /* SenTestingKit.framework in Frameworks */,
+				6573D0CE1956CD7000D536C4 /* UIKit.framework in Frameworks */,
+				6573D0CF1956CD7000D536C4 /* Foundation.framework in Frameworks */,
+				6573D0D21956CD7000D536C4 /* libYTLIb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6573D0B01956CD7000D536C4 = {
+			isa = PBXGroup;
+			children = (
+				6573D0BE1956CD7000D536C4 /* YTLIb */,
+				6573D0D31956CD7000D536C4 /* YTLIbTests */,
+				6573D0BB1956CD7000D536C4 /* Frameworks */,
+				6573D0BA1956CD7000D536C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6573D0BA1956CD7000D536C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0B91956CD7000D536C4 /* libYTLIb.a */,
+				6573D0CA1956CD7000D536C4 /* YTLIbTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6573D0BB1956CD7000D536C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0BC1956CD7000D536C4 /* Foundation.framework */,
+				6573D0CB1956CD7000D536C4 /* SenTestingKit.framework */,
+				6573D0CD1956CD7000D536C4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6573D0BE1956CD7000D536C4 /* YTLIb */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0C11956CD7000D536C4 /* YouTubeView.h */,
+				6573D0C31956CD7000D536C4 /* YouTubeView.m */,
+				65D8F1871959CDF6005D8147 /* YTRequests.h */,
+				65D8F1881959CDF6005D8147 /* YTRequests.m */,
+				65D8F18A1959CE59005D8147 /* Utils.h */,
+				65D8F18B1959CE59005D8147 /* Utils.m */,
+				65874CDA195B4B8A00000C1B /* XMLParse.h */,
+				65874CDB195B4B8A00000C1B /* XMLParse.m */,
+				6573D0BF1956CD7000D536C4 /* Supporting Files */,
+			);
+			path = YTLIb;
+			sourceTree = "<group>";
+		};
+		6573D0BF1956CD7000D536C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0C01956CD7000D536C4 /* YTLIb-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6573D0D31956CD7000D536C4 /* YTLIbTests */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0D91956CD7000D536C4 /* YTLIbTests.h */,
+				6573D0DA1956CD7000D536C4 /* YTLIbTests.m */,
+				6573D0D41956CD7000D536C4 /* Supporting Files */,
+			);
+			path = YTLIbTests;
+			sourceTree = "<group>";
+		};
+		6573D0D41956CD7000D536C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0D51956CD7000D536C4 /* YTLIbTests-Info.plist */,
+				6573D0D61956CD7000D536C4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6573D0B81956CD7000D536C4 /* YTLIb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6573D0DE1956CD7000D536C4 /* Build configuration list for PBXNativeTarget "YTLIb" */;
+			buildPhases = (
+				6573D0B51956CD7000D536C4 /* Sources */,
+				6573D0B61956CD7000D536C4 /* Frameworks */,
+				6573D0B71956CD7000D536C4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YTLIb;
+			productName = YTLIb;
+			productReference = 6573D0B91956CD7000D536C4 /* libYTLIb.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6573D0C91956CD7000D536C4 /* YTLIbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6573D0E11956CD7000D536C4 /* Build configuration list for PBXNativeTarget "YTLIbTests" */;
+			buildPhases = (
+				6573D0C51956CD7000D536C4 /* Sources */,
+				6573D0C61956CD7000D536C4 /* Frameworks */,
+				6573D0C71956CD7000D536C4 /* Resources */,
+				6573D0C81956CD7000D536C4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6573D0D11956CD7000D536C4 /* PBXTargetDependency */,
+			);
+			name = YTLIbTests;
+			productName = YTLIbTests;
+			productReference = 6573D0CA1956CD7000D536C4 /* YTLIbTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6573D0B11956CD7000D536C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Alexander Baranov";
+			};
+			buildConfigurationList = 6573D0B41956CD7000D536C4 /* Build configuration list for PBXProject "YTLIb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6573D0B01956CD7000D536C4;
+			productRefGroup = 6573D0BA1956CD7000D536C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6573D0B81956CD7000D536C4 /* YTLIb */,
+				6573D0C91956CD7000D536C4 /* YTLIbTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6573D0C71956CD7000D536C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0D81956CD7000D536C4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6573D0C81956CD7000D536C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6573D0B51956CD7000D536C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0C41956CD7000D536C4 /* YouTubeView.m in Sources */,
+				65D8F1891959CDF6005D8147 /* YTRequests.m in Sources */,
+				65D8F18C1959CE59005D8147 /* Utils.m in Sources */,
+				65874CDC195B4B8A00000C1B /* XMLParse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6573D0C51956CD7000D536C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0DB1956CD7000D536C4 /* YTLIbTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6573D0D11956CD7000D536C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6573D0B81956CD7000D536C4 /* YTLIb */;
+			targetProxy = 6573D0D01956CD7000D536C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6573D0D61956CD7000D536C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6573D0D71956CD7000D536C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6573D0DC1956CD7000D536C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6573D0DD1956CD7000D536C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6573D0DF1956CD7000D536C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/YTLIb.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YTLIb/YTLIb-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6573D0E01956CD7000D536C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/YTLIb.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YTLIb/YTLIb-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6573D0E21956CD7000D536C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YTLIb/YTLIb-Prefix.pch";
+				INFOPLIST_FILE = "YTLIbTests/YTLIbTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6573D0E31956CD7000D536C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YTLIb/YTLIb-Prefix.pch";
+				INFOPLIST_FILE = "YTLIbTests/YTLIbTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6573D0B41956CD7000D536C4 /* Build configuration list for PBXProject "YTLIb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6573D0DC1956CD7000D536C4 /* Debug */,
+				6573D0DD1956CD7000D536C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6573D0DE1956CD7000D536C4 /* Build configuration list for PBXNativeTarget "YTLIb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6573D0DF1956CD7000D536C4 /* Debug */,
+				6573D0E01956CD7000D536C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6573D0E11956CD7000D536C4 /* Build configuration list for PBXNativeTarget "YTLIbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6573D0E21956CD7000D536C4 /* Debug */,
+				6573D0E31956CD7000D536C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6573D0B11956CD7000D536C4 /* Project object */;
+}

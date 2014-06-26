@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6573D06A1956CD4C00D536C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D0691956CD4C00D536C4 /* UIKit.framework */; };
+		6573D06C1956CD4C00D536C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D06B1956CD4C00D536C4 /* Foundation.framework */; };
+		6573D06E1956CD4C00D536C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D06D1956CD4C00D536C4 /* CoreGraphics.framework */; };
+		6573D0701956CD4C00D536C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D06F1956CD4C00D536C4 /* CoreData.framework */; };
+		6573D0761956CD4C00D536C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6573D0741956CD4C00D536C4 /* InfoPlist.strings */; };
+		6573D0781956CD4C00D536C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6573D0771956CD4C00D536C4 /* main.m */; };
+		6573D07C1956CD4C00D536C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6573D07B1956CD4C00D536C4 /* AppDelegate.m */; };
+		6573D07E1956CD4C00D536C4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6573D07D1956CD4C00D536C4 /* Default.png */; };
+		6573D0801956CD4C00D536C4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6573D07F1956CD4C00D536C4 /* Default@2x.png */; };
+		6573D0821956CD4C00D536C4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6573D0811956CD4C00D536C4 /* Default-568h@2x.png */; };
+		6573D0851956CD4C00D536C4 /* YT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6573D0831956CD4C00D536C4 /* YT.xcdatamodeld */; };
+		6573D0881956CD4C00D536C4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6573D0871956CD4C00D536C4 /* MasterViewController.m */; };
+		6573D08B1956CD4C00D536C4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6573D08A1956CD4C00D536C4 /* DetailViewController.m */; };
+		6573D08E1956CD4C00D536C4 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6573D08C1956CD4C00D536C4 /* MasterViewController.xib */; };
+		6573D0911956CD4D00D536C4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6573D08F1956CD4D00D536C4 /* DetailViewController.xib */; };
+		6573D0991956CD4D00D536C4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D0981956CD4D00D536C4 /* SenTestingKit.framework */; };
+		6573D09A1956CD4D00D536C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D0691956CD4C00D536C4 /* UIKit.framework */; };
+		6573D09B1956CD4D00D536C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D06B1956CD4C00D536C4 /* Foundation.framework */; };
+		6573D09C1956CD4D00D536C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573D06F1956CD4C00D536C4 /* CoreData.framework */; };
+		6573D0A41956CD4D00D536C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6573D0A21956CD4D00D536C4 /* InfoPlist.strings */; };
+		6573D0A71956CD4D00D536C4 /* YTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6573D0A61956CD4D00D536C4 /* YTTests.m */; };
+		65D8F18E195A088D005D8147 /* libYTLIb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D8F18D195A088D005D8147 /* libYTLIb.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6573D09D1956CD4D00D536C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6573D05E1956CD4C00D536C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6573D0651956CD4C00D536C4;
+			remoteInfo = YT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6573D0661956CD4C00D536C4 /* YT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6573D0691956CD4C00D536C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6573D06B1956CD4C00D536C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6573D06D1956CD4C00D536C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6573D06F1956CD4C00D536C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6573D0731956CD4C00D536C4 /* YT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YT-Info.plist"; sourceTree = "<group>"; };
+		6573D0751956CD4C00D536C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6573D0771956CD4C00D536C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6573D0791956CD4C00D536C4 /* YT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YT-Prefix.pch"; sourceTree = "<group>"; };
+		6573D07A1956CD4C00D536C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6573D07B1956CD4C00D536C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6573D07D1956CD4C00D536C4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6573D07F1956CD4C00D536C4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6573D0811956CD4C00D536C4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6573D0841956CD4C00D536C4 /* YT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YT.xcdatamodel; sourceTree = "<group>"; };
+		6573D0861956CD4C00D536C4 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		6573D0871956CD4C00D536C4 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		6573D0891956CD4C00D536C4 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6573D08A1956CD4C00D536C4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6573D08D1956CD4C00D536C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		6573D0901956CD4D00D536C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		6573D0971956CD4D00D536C4 /* YTTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6573D0981956CD4D00D536C4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6573D0A11956CD4D00D536C4 /* YTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YTTests-Info.plist"; sourceTree = "<group>"; };
+		6573D0A31956CD4D00D536C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6573D0A51956CD4D00D536C4 /* YTTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTTests.h; sourceTree = "<group>"; };
+		6573D0A61956CD4D00D536C4 /* YTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTTests.m; sourceTree = "<group>"; };
+		6573D0E71957056F00D536C4 /* YouTubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeView.h; sourceTree = "<group>"; };
+		65D8F18D195A088D005D8147 /* libYTLIb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYTLIb.a; path = "../../../../Library/Developer/Xcode/DerivedData/YouTube-gzvgontdccmahfbqtvgwzzbdsqtp/Build/Products/Debug-iphoneos/libYTLIb.a"; sourceTree = "<group>"; };
+		65D8F18F195A08AE005D8147 /* YTRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTRequests.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6573D0631956CD4C00D536C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D8F18E195A088D005D8147 /* libYTLIb.a in Frameworks */,
+				6573D06A1956CD4C00D536C4 /* UIKit.framework in Frameworks */,
+				6573D06C1956CD4C00D536C4 /* Foundation.framework in Frameworks */,
+				6573D06E1956CD4C00D536C4 /* CoreGraphics.framework in Frameworks */,
+				6573D0701956CD4C00D536C4 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6573D0931956CD4D00D536C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0991956CD4D00D536C4 /* SenTestingKit.framework in Frameworks */,
+				6573D09A1956CD4D00D536C4 /* UIKit.framework in Frameworks */,
+				6573D09B1956CD4D00D536C4 /* Foundation.framework in Frameworks */,
+				6573D09C1956CD4D00D536C4 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6573D05D1956CD4C00D536C4 = {
+			isa = PBXGroup;
+			children = (
+				6573D0711956CD4C00D536C4 /* YT */,
+				6573D09F1956CD4D00D536C4 /* YTTests */,
+				6573D0681956CD4C00D536C4 /* Frameworks */,
+				6573D0671956CD4C00D536C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6573D0671956CD4C00D536C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0661956CD4C00D536C4 /* YT.app */,
+				6573D0971956CD4D00D536C4 /* YTTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6573D0681956CD4C00D536C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65D8F18D195A088D005D8147 /* libYTLIb.a */,
+				6573D0E61957056F00D536C4 /* YTLIb */,
+				6573D0691956CD4C00D536C4 /* UIKit.framework */,
+				6573D06B1956CD4C00D536C4 /* Foundation.framework */,
+				6573D06D1956CD4C00D536C4 /* CoreGraphics.framework */,
+				6573D06F1956CD4C00D536C4 /* CoreData.framework */,
+				6573D0981956CD4D00D536C4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6573D0711956CD4C00D536C4 /* YT */ = {
+			isa = PBXGroup;
+			children = (
+				6573D07A1956CD4C00D536C4 /* AppDelegate.h */,
+				6573D07B1956CD4C00D536C4 /* AppDelegate.m */,
+				6573D0861956CD4C00D536C4 /* MasterViewController.h */,
+				6573D0871956CD4C00D536C4 /* MasterViewController.m */,
+				6573D0891956CD4C00D536C4 /* DetailViewController.h */,
+				6573D08A1956CD4C00D536C4 /* DetailViewController.m */,
+				6573D08C1956CD4C00D536C4 /* MasterViewController.xib */,
+				6573D08F1956CD4D00D536C4 /* DetailViewController.xib */,
+				6573D0831956CD4C00D536C4 /* YT.xcdatamodeld */,
+				6573D0721956CD4C00D536C4 /* Supporting Files */,
+			);
+			path = YT;
+			sourceTree = "<group>";
+		};
+		6573D0721956CD4C00D536C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0731956CD4C00D536C4 /* YT-Info.plist */,
+				6573D0741956CD4C00D536C4 /* InfoPlist.strings */,
+				6573D0771956CD4C00D536C4 /* main.m */,
+				6573D0791956CD4C00D536C4 /* YT-Prefix.pch */,
+				6573D07D1956CD4C00D536C4 /* Default.png */,
+				6573D07F1956CD4C00D536C4 /* Default@2x.png */,
+				6573D0811956CD4C00D536C4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6573D09F1956CD4D00D536C4 /* YTTests */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0A51956CD4D00D536C4 /* YTTests.h */,
+				6573D0A61956CD4D00D536C4 /* YTTests.m */,
+				6573D0A01956CD4D00D536C4 /* Supporting Files */,
+			);
+			path = YTTests;
+			sourceTree = "<group>";
+		};
+		6573D0A01956CD4D00D536C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6573D0A11956CD4D00D536C4 /* YTTests-Info.plist */,
+				6573D0A21956CD4D00D536C4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6573D0E61957056F00D536C4 /* YTLIb */ = {
+			isa = PBXGroup;
+			children = (
+				65D8F18F195A08AE005D8147 /* YTRequests.h */,
+				6573D0E71957056F00D536C4 /* YouTubeView.h */,
+			);
+			name = YTLIb;
+			path = ../YTLIb/YTLIb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6573D0651956CD4C00D536C4 /* YT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6573D0AA1956CD4D00D536C4 /* Build configuration list for PBXNativeTarget "YT" */;
+			buildPhases = (
+				6573D0621956CD4C00D536C4 /* Sources */,
+				6573D0631956CD4C00D536C4 /* Frameworks */,
+				6573D0641956CD4C00D536C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YT;
+			productName = YT;
+			productReference = 6573D0661956CD4C00D536C4 /* YT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6573D0961956CD4D00D536C4 /* YTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6573D0AD1956CD4D00D536C4 /* Build configuration list for PBXNativeTarget "YTTests" */;
+			buildPhases = (
+				6573D0921956CD4D00D536C4 /* Sources */,
+				6573D0931956CD4D00D536C4 /* Frameworks */,
+				6573D0941956CD4D00D536C4 /* Resources */,
+				6573D0951956CD4D00D536C4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6573D09E1956CD4D00D536C4 /* PBXTargetDependency */,
+			);
+			name = YTTests;
+			productName = YTTests;
+			productReference = 6573D0971956CD4D00D536C4 /* YTTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6573D05E1956CD4C00D536C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Alexander Baranov";
+			};
+			buildConfigurationList = 6573D0611956CD4C00D536C4 /* Build configuration list for PBXProject "YT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6573D05D1956CD4C00D536C4;
+			productRefGroup = 6573D0671956CD4C00D536C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6573D0651956CD4C00D536C4 /* YT */,
+				6573D0961956CD4D00D536C4 /* YTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6573D0641956CD4C00D536C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0761956CD4C00D536C4 /* InfoPlist.strings in Resources */,
+				6573D07E1956CD4C00D536C4 /* Default.png in Resources */,
+				6573D0801956CD4C00D536C4 /* Default@2x.png in Resources */,
+				6573D0821956CD4C00D536C4 /* Default-568h@2x.png in Resources */,
+				6573D08E1956CD4C00D536C4 /* MasterViewController.xib in Resources */,
+				6573D0911956CD4D00D536C4 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6573D0941956CD4D00D536C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0A41956CD4D00D536C4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6573D0951956CD4D00D536C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6573D0621956CD4C00D536C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0781956CD4C00D536C4 /* main.m in Sources */,
+				6573D07C1956CD4C00D536C4 /* AppDelegate.m in Sources */,
+				6573D0851956CD4C00D536C4 /* YT.xcdatamodeld in Sources */,
+				6573D0881956CD4C00D536C4 /* MasterViewController.m in Sources */,
+				6573D08B1956CD4C00D536C4 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6573D0921956CD4D00D536C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573D0A71956CD4D00D536C4 /* YTTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6573D09E1956CD4D00D536C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6573D0651956CD4C00D536C4 /* YT */;
+			targetProxy = 6573D09D1956CD4D00D536C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6573D0741956CD4C00D536C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6573D0751956CD4C00D536C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6573D08C1956CD4C00D536C4 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6573D08D1956CD4C00D536C4 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		6573D08F1956CD4D00D536C4 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6573D0901956CD4D00D536C4 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		6573D0A21956CD4D00D536C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6573D0A31956CD4D00D536C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6573D0A81956CD4D00D536C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6573D0A91956CD4D00D536C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6573D0AB1956CD4D00D536C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YT/YT-Prefix.pch";
+				INFOPLIST_FILE = "YT/YT-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/YouTube-gzvgontdccmahfbqtvgwzzbdsqtp/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6573D0AC1956CD4D00D536C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YT/YT-Prefix.pch";
+				INFOPLIST_FILE = "YT/YT-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/YouTube-gzvgontdccmahfbqtvgwzzbdsqtp/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6573D0AE1956CD4D00D536C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YT.app/YT";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YT/YT-Prefix.pch";
+				INFOPLIST_FILE = "YTTests/YTTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6573D0AF1956CD4D00D536C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YT.app/YT";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YT/YT-Prefix.pch";
+				INFOPLIST_FILE = "YTTests/YTTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6573D0611956CD4C00D536C4 /* Build configuration list for PBXProject "YT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6573D0A81956CD4D00D536C4 /* Debug */,
+				6573D0A91956CD4D00D536C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6573D0AA1956CD4D00D536C4 /* Build configuration list for PBXNativeTarget "YT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6573D0AB1956CD4D00D536C4 /* Debug */,
+				6573D0AC1956CD4D00D536C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6573D0AD1956CD4D00D536C4 /* Build configuration list for PBXNativeTarget "YTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6573D0AE1956CD4D00D536C4 /* Debug */,
+				6573D0AF1956CD4D00D536C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6573D0831956CD4C00D536C4 /* YT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6573D0841956CD4C00D536C4 /* YT.xcdatamodel */,
+			);
+			currentVersion = 6573D0841956CD4C00D536C4 /* YT.xcdatamodel */;
+			path = YT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6573D05E1956CD4C00D536C4 /* Project object */;
+}
