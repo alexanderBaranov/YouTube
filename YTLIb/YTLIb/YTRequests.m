@@ -21,29 +21,44 @@
     NSString *resultStr = [titleVideo stringByReplacingOccurrencesOfString:@" " withString:@"+"];
     NSString *urlString = [NSString stringWithFormat:@"http://gdata.youtube.com/feeds/api/videos?q=%@&orderby=published&start-index=1&max-results=50&v=2&alt=jsonc", resultStr ];
 
-    [Utils getJsonValues:@[@"id", @"title", @"sqDefault"] json_string:[self sendRequest:urlString] outArray:mapOfRequests];    
+    @try
+    {
+        [Utils getJsonValues:@[@"id", @"title", @"sqDefault"] json_string:[self sendRequest:urlString] outArray:mapOfRequests];
+    }
+    @catch (NSException *exception)
+    {
+        NSLog(@"%@",exception.reason);
+    }
 }
 
 +(void) getCommentsOfVideo:(NSString *)idVideo OutResult:(NSMutableArray*)arrComments
 {
     NSString *urlString = [NSString stringWithFormat:@"http://gdata.youtube.com/feeds/api/videos/%@/comments", idVideo];
     NSURL *url = [NSURL URLWithString:urlString];
-    
-    [Utils getDataOfXMLFromURL:url OutResult:arrComments];
+
+    @try
+    {
+        [Utils getDataOfXMLFromURL:url OutResult:arrComments];
+    }
+    @catch (NSException *exception)
+    {
+        NSLog(@"%@",exception.reason);
+    }
 }
 
 +(NSString *) sendRequest:(NSString *)urlString
 {
     NSURL *url = [NSURL URLWithString:urlString];
-    
+    NSMutableData *responseData;
+
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLCacheStorageAllowed timeoutInterval:20.0f];
     
     NSURLResponse* response = nil;
-    NSMutableData *responseData = [NSMutableData dataWithData:[NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil]];
-    
-    NSError *error2;
-    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error2];
-    NSLog(@"%@", jsonDict);
+    responseData = [NSMutableData dataWithData:[NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil]];
+    if(!responseData.length)
+    {
+        @throw [NSException exceptionWithName:nil reason:@"The request failed. Perhaps there is no Internet connection." userInfo:nil];
+    }
 
     NSString *json_string = [[[NSMutableString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] autorelease];
     

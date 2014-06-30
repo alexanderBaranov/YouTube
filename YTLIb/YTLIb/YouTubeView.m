@@ -11,58 +11,52 @@
 
 @implementation YTPlayer
 
--(id) init
-{
-    self = [super init];
-    
-    if(self)
-    {
-        
-        int cacheSizeMemory = 40*1024*1024;
-        int cacheSizeDisk = 200*1024*1024;
-        NSURLCache *sharedCache = [[[NSURLCache alloc] initWithMemoryCapacity:cacheSizeMemory diskCapacity:cacheSizeDisk diskPath:@"nsurlcache"] autorelease];
-        [NSURLCache setSharedURLCache:sharedCache];
-
-        webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 500, 400)];
-        webView.allowsInlineMediaPlayback = YES;
-        webView.mediaPlaybackRequiresUserAction = NO;
-        //webView.delegate = self;
-
-        [self.view addSubview: webView];
-        
-        segmentQuality = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"240px",@"360px",@"480px",@"720px",@"1080px",@">1080px", nil]];
-        
-        [segmentQuality addTarget:self action:@selector(setQuality:) forControlEvents:UIControlEventValueChanged];
-        
-        [self.view addSubview: segmentQuality];
-
-        commentsView = [[UITextView alloc] initWithFrame:self.view.frame];
-        
-        [self.view addSubview: commentsView];
-        
-        CGRect frame = self.view.frame;
-        frame.size.height += segmentQuality.frame.size.height;
-        self.view.frame = frame;
-        
-        frame = segmentQuality.frame;
-        frame.origin.y = webView.frame.size.height;
-        segmentQuality.frame = frame;
-        
-        frame = commentsView.frame;
-        frame.origin.y = segmentQuality.frame.size.height + webView.frame.size.height;
-        commentsView.frame = frame;
-    }
-    return self;
-}
-
--(void)loadView
-{
-    [super loadView];
-}
-
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 500, 400)];
+    webView.allowsInlineMediaPlayback = YES;
+    webView.mediaPlaybackRequiresUserAction = NO;
+    //webView.delegate = self;
+    
+    [self.view addSubview: webView];
+    
+    segmentQuality = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"240px",@"360px",@"480px",@"720px",@"1080px",@">1080px", nil]];
+    
+    [segmentQuality addTarget:self action:@selector(setQuality:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.view addSubview: segmentQuality];
+    
+    commentsView = [[UITextView alloc] initWithFrame:self.view.frame];
+    commentsView.editable = NO;
+    commentsView.dataDetectorTypes = UIDataDetectorTypeLink;
+    
+    [self.view addSubview: commentsView];
+    
+    btnLink = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 20)];
+    [btnLink.titleLabel setTextColor:[UIColor blueColor]];
+    [btnLink setBackgroundColor:[UIColor redColor]];
+    
+    [btnLink setTitle:@"Address" forState:UIControlStateNormal];
+    [btnLink addTarget:self action:@selector(pushHyperLink) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview: btnLink];
+    
+    CGRect frame = self.view.frame;
+    frame.size.height += segmentQuality.frame.size.height;
+    self.view.frame = frame;
+    
+    frame = segmentQuality.frame;
+    frame.origin.y = webView.frame.size.height;
+    segmentQuality.frame = frame;
+    
+    frame = btnLink.frame;
+    frame.origin.y = segmentQuality.frame.size.height + webView.frame.size.height + 5;
+    btnLink.frame = frame;
+    
+    frame = commentsView.frame;
+    frame.origin.y = segmentQuality.frame.size.height + webView.frame.size.height + 25;
+    commentsView.frame = frame;
     
     [self LoadPlayer:@""];
     
@@ -77,6 +71,7 @@
     [idVideo release];
     [strQuality release];
     [commentsView release];
+    [btnLink release];
     
     [super dealloc];
 }
@@ -113,7 +108,7 @@
                                 @"}"
                            
                                 @"</script>"
-                                @"<iframe id='playerId' type='text/html' width='500' height='400' src='http://www.youtube.com/embed/%@?enablejsapi=1&rel=0&playsinline=1&autoplay=0' frameborder='0'>"
+                                @"<iframe id='playerId' type='text/html' width='500' height='400' src='http://www.youtube.com/embed/%@?enablejsapi=1&rel=0&playsinline=1&autoplay=1' frameborder='0'>"
                                 @"</body>"
                                 @"</html>" , strQuality, idVideoOfYT];
     
@@ -121,7 +116,7 @@
     [webView loadHTMLString:embedHTML baseURL:nil];
     
     if(idVideo.length)
-    {
+    {                
         NSMutableArray *arrComments = [NSMutableArray new];
         [YTRequests getCommentsOfVideo:idVideo OutResult:arrComments];
         
@@ -130,6 +125,7 @@
         for(int i = 1; i<arrComments.count; i++)
         {
             [strComments appendString:[arrComments objectAtIndex:i]];
+
             [strComments appendString:@"\n\r"];
          
             if(iCountOneComment == 3)
@@ -179,6 +175,12 @@
     }
     
     [self LoadPlayer:idVideo];
+}
+
+-(IBAction)pushHyperLink
+{
+    if(idVideo.length)
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.youtube.com/watch?v=%@", idVideo]]];
 }
 
 @end

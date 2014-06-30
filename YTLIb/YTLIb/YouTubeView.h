@@ -14,6 +14,7 @@
     UIWebView *webView;
     UISegmentedControl *segmentQuality;
     UITextView *commentsView;
+    UIButton *btnLink;
 
     NSMutableString *idVideo;
     NSMutableString *strQuality;

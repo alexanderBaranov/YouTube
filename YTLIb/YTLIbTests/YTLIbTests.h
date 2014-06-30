@@ -7,7 +7,11 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "YouTubeView.h"
 
 @interface YTLIbTests : SenTestCase
+{
+    YTPlayer *player;
+}
 
 @end

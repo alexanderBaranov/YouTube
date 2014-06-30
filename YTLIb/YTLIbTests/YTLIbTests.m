@@ -7,6 +7,7 @@
 //
 
 #import "YTLIbTests.h"
+#import "YTRequests.h"
 
 @implementation YTLIbTests
 
@@ -14,19 +15,37 @@
 {
     [super setUp];
     
-    // Set-up code here.
+    player = [YTPlayer new];
+    STAssertNotNil(player, @"Could not create player subject.");
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
+    [player release];
     [super tearDown];
 }
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in YTLIbTests");
+//    STFail(@"Unit tests are not implemented yet in YTLIbTests");
+}
+
+- (void)testFindVideos
+{
+    NSMutableArray *arrData;
+
+    STAssertNoThrow([YTRequests FindVideos:@"nice cat" outArray:arrData], @"Not connect");
+    STAssertEquals(nil, arrData, @"Not return videos");
+    [arrData release];
+}
+
+- (void)testGetCommentsOfVideo
+{
+    NSMutableArray *arrData;
+
+    STAssertNoThrow([YTRequests getCommentsOfVideo:@"asdasd" OutResult:arrData], @"Not connect");
+    STAssertEquals(0, arrData.count, @"Not return comments");
+    [arrData release];
 }
 
 @end

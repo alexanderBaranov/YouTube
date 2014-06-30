@@ -7,6 +7,7 @@
 //
 
 #import "YTTests.h"
+#import "YTRequests.h"
 
 @implementation YTTests
 
@@ -15,6 +16,7 @@
     [super setUp];
     
     // Set-up code here.
+    
 }
 
 - (void)tearDown
@@ -26,7 +28,26 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in YTTests");
+//    STFail(@"Unit tests are not implemented yet in YTTests");
 }
+
+- (void)testFindVideos
+{
+    NSMutableArray *arrData;
+    
+    STAssertNoThrow([YTRequests FindVideos:@"nice cat" outArray:arrData], @"Not connect");
+    STAssertEquals(0, arrData.count, @"Not return videos");
+    [arrData release];
+}
+
+- (void)testGetCommentsOfVideo
+{
+    NSMutableArray *arrData;
+    
+    STAssertNoThrow([YTRequests getCommentsOfVideo:@"asdasd" OutResult:arrData], @"Not connect");
+    STAssertEquals(0, arrData.count, @"Not return comments");
+    [arrData release];
+}
+
 
 @end

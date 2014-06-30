@@ -56,11 +56,9 @@
         sleep(1);
 
     if ( delegate.error == nil ) {
-        // если нет то выводим результат
-        NSLog(@"%@",delegate.titles);
+//        NSLog(@"%@",delegate.titles);
         [arrOutObjects addObjectsFromArray:delegate.titles];
     } else {
-        // если была - выводим ошибку
         NSLog(@"Error: %@", delegate.error);
     }
     
